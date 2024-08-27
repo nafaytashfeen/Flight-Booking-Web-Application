@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+<style>
+    body {
+        background-color: #00a0bd;
+    }
+</style>
+</head>
+
+<body>
+
+<h1 class='website-name'style="color: whitesmoke;font-weight: bold; font-family: Nunito;">
+    <a href="../Homepage/homepage.html" style="color: inherit; text-decoration: None;">Flighter</a>
+</h1>
+
+<!-- The Actual Form -->
+<div class="form-box">
+    <form class="form">
+        <span class="title">Sign up</span>
+        <span class="subtitle">Create a free account with your email.</span>
+        <div class="form-container">
+            <input type="text" class="input" placeholder="First Name" id="f1" required="required">
+            <input type="text" class="input" placeholder="Last Name" id="f1.2" required="required">
+            <input type="email" class="input" placeholder="Email" id="f2">
+            <input type="text" class="input" placeholder="Password" id="f3" autocomplete="off" required="required">
+            <input type="text" class="input" placeholder="Confirm Password" id="f4" autocomplete="off" required="required">
+            <span class="error-message" id="error-message">Passwords do not match</span>
+        </div>
+        <button id="sign-up-button" style="font-family: Nunito;">Sign up</button>
+    </form>
+    <div class="form-section">
+        <p>By signing up, you agree with our <a href="">Terms & conditions</a> and <a href="">Privacy agreement</a></p>
+        <p>Already have an account? <a href="signin.html">Log in</a> </p>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/crypto-js@4.1.1/crypto-js.js"></script>
+
+<script src="register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,817 @@
+@font-face {
+    font-family: Nunito;
+    src: url(Nunito/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+.outercontainer{
+background-color: #00CFFF;
+background-image: url(images/wp4069436-hd-travel-wallpapers.jpg);
+background-size: cover; /* Cover the entire container */
+background-position: center; /* Center the background image */
+background-repeat: no-repeat;
+height: 450px;
+width: 100%; 
+padding: 10px;
+justify-content: flex-start; 
+align-items: flex-start;
+display: flex;
+position: relative;
+box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.register-signin-container {
+  display: flex; /* Align children horizontally */
+  gap: 1%; /* Space between buttons */
+  max-width: 600px;
+  position: absolute;
+  top: 10%;
+  left: 70%;
+}
+
+.register, .signin{
+  background-color: white;
+  height: 4em;
+  width: 8em; /* Fixed width or adjust as needed */
+  padding: 5px;
+  line-height: 0;
+  border-radius: 15px;
+  font-weight: 100;
+  text-align: center;
+  cursor: pointer;
+  margin: 5px; /* Add some spacing between buttons */
+  margin-top: 2%;
+}
+
+.settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  padding: 6px 12px;
+  gap: 8px;
+  height: 3em;
+  width: 10em;
+  border: none;
+  background: #2db6d6;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: -3%;
+  left: 88%;
+}
+
+@media (max-width: 600px) {
+  .register-signin-container{
+      display: flex; /* Align children horizontally */
+      flex-direction: row;
+      gap: 1%; /* Space between buttons */
+      max-width: 500px;
+      max-height: 300px;
+      position: absolute;
+      top: 10%;
+      left: 67%;
+      margin-top: 2%;
+  }
+
+  .outercontainer {
+    height: 450px;
+  }
+
+  .outercontainer h1{
+    text-align: center;
+    margin-top: 15%;
+  }
+
+  .outercontainer h2{
+    text-align: center;
+    margin-left: 2%;
+  }
+
+  .register, .signin{
+      background-color: white;
+      min-height: 1.1em;
+      min-width:4.5em; /* Fixed width or adjust as needed */
+      max-height: 3.2em;
+      padding: 1px;
+      line-height: 0;
+      border-radius: 15px;
+      font-size: 0.7em;
+      text-align: center;
+      cursor: pointer;
+      margin: 2px; /* Add some spacing between buttons */
+    }
+
+  .settings {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1%;
+      padding: 6px 12px;
+      max-height: 2.5em;
+      max-width: 8em;
+      border: none;
+      background: #2db6d6;
+      color: white;
+      border-radius: 20px;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left: 70%;
+    }
+}
+
+@media(min-width: 601px){
+
+  .outercontainer h1{
+    margin-left: 15%;
+    margin-top: 10%;
+    font-size: 3em;
+  }
+
+  .outercontainer h2{
+    margin-left: 5%;
+  }
+
+  .register-signin-container{
+      max-width: 500px;
+      max-height: 300px;
+      position: absolute;
+      top: 10%;
+      left: 65%;
+  }
+  
+  .settings {
+      max-width: 8em;
+      position: absolute;
+      top: 35%;
+      left: 75%;
+  }
+}
+
+@media(min-width: 768px) {
+  .register-signin-container{
+      max-width: 500px;
+      max-height: 300px;
+      position: absolute;
+      top: 10%;
+      left: 70%;
+  }
+  
+  .settings {
+      max-width: 10em;
+      max-height: 4em;
+      position: absolute;
+      top: 35%;
+      left: 80%;
+  }
+
+  .outercontainer{
+    height: 350px;
+  }
+
+  .outercontainer h1{
+    font-size: 4em;
+    margin-left: 10%;
+  }
+
+  .outercontainer h2 {
+    font-size: 2em;
+  }
+
+}
+
+@media(min-width: 992px) {
+  .register-signin-container{
+      max-width: 500px;
+      max-height: 300px;
+      position: absolute;
+      top: 10%;
+      left: 64%;
+  }
+  
+  .settings {
+      max-width: 8em;
+      max-height: 4em;
+      position: absolute;
+      top: 4%;
+      left: 88%;
+  }
+
+  .outercontainer h1 {
+    margin-left: 20%;
+  }
+}
+
+@media(min-width: 1200px){
+  .register-signin-container{
+      max-height: 300px;
+      max-width: 600px;
+      position: absolute;
+      top: 10%;
+      left: 70%;
+  }
+  
+  .settings {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3%;
+      padding: 6px 12px;
+      gap: 8px;
+      height: 3em;
+      min-width: 10em;
+      border: none;
+      background: #2db6d6;
+      color: white;
+      border-radius: 20px;
+      cursor: pointer;
+      position: absolute;
+      top: 2%;
+      left: 88%;
+  }
+
+  .outercontainer h1 {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .outercontainer {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .outercontainer {
+    height: 150px;
+  }
+
+  .register, .signin {
+    width: 20%; /* Further adjust width */
+    font-size: 0.8em; /* Further adjust font size */
+  }
+}
+
+.lable {
+line-height: 20px;
+font-size: 17px;
+font-family: sans-serif;
+letter-spacing: 1px;
+}
+
+.settings:hover {
+background: grey;
+}
+
+.settings:hover .svg-icon {
+animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+0% {
+    transform: rotate(0deg);
+}
+
+100% {
+    transform: rotate(360deg);
+}
+}
+
+.about-us {
+    font-family: Nunito;
+    color: gray;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;  /* Centers the container horizontally */
+    margin-top: 2%;
+    padding: 20px;   /* Adds some padding around the content */
+    line-height: 2.0; /* Improves readability */
+}
+
+.our-story {
+    font-family: Nunito;
+    color: gray;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;  /* Centers the container horizontally */
+    margin-top: -1%;
+    padding: 20px;   /* Adds some padding around the content */
+    line-height: 2.0; /* Improves readability */
+}
+
+.what-we-do {
+    font-family: Nunito;
+    color: gray;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;  /* Centers the container horizontally */
+    margin-top: -1%;
+    padding: 20px;   /* Adds some padding around the content */
+    line-height: 2.0; /* Improves readability */
+}
+
+.what-we-do h4 {
+    font-weight: 500;
+    text-align: left;
+    margin-left: 5%;
+}
+
+
+/* Footer styling */
+
+.footer {
+  background-color: #d6d6d6;
+  height: 555px;
+  width:100%;
+  margin-top: 10%;
+  
+}
+
+.footer h2 {
+  font-family: Nunito;
+  font-weight: bold;      
+}
+
+.dropdown2 {
+  /* position:relative;
+  top: 12%;
+  left: 15%; */
+  width: 175px; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  background-color: #b7b7b7; 
+  color: #333; 
+  font-size: 16px;
+  font-weight: bold; 
+  cursor: pointer;
+}
+
+/* Style for dropdown options */
+.dropdown2 option {
+  background-color: #fff; 
+  color: #333; 
+  font-size: 16px;
+}
+
+.main {
+display: flex;
+flex-direction: column;
+gap: 0.5em;
+/* position: relative;
+top: 5%;
+left:67.5%; */
+}
+
+.up {
+display: flex;
+flex-direction: row;
+gap: 0.5em;
+}
+
+.down {
+display: flex;
+flex-direction: row;
+gap: 0.5em;
+}
+
+.card1 {
+width: 90px;
+height: 90px;
+outline: none;
+border: none;
+background: white;
+border-radius: 90px 5px 5px 5px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+transition: .2s ease-in-out;
+}
+
+.instagram {
+margin-top: 1.5em;
+margin-left: 1.2em;
+fill: #cc39a4;
+}
+
+.card2 {
+width: 90px;
+height: 90px;
+outline: none;
+border: none;
+background: white;
+border-radius: 5px 90px 5px 5px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+transition: .2s ease-in-out;
+}
+
+.facebook {
+margin-top: 1.5em;
+margin-left: -.9em;
+fill: #03A9F4;
+}
+
+.card3 {
+width: 90px;
+height: 90px;
+outline: none;
+border: none;
+background: white;
+border-radius: 5px 5px 5px 90px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+transition: .2s ease-in-out;
+}
+
+.whatsapp {
+margin-top: -.6em;
+margin-left: 1.2em;
+fill: #00ff00;
+}
+
+.card4 {
+width: 90px;
+height: 90px;
+outline: none;
+border: none;
+background: white;
+border-radius: 5px 5px 90px 5px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+transition: .2s ease-in-out;
+}
+
+.gmail {
+margin-top: -.9em;
+margin-left: -1.2em;
+fill: #f14336;
+}
+
+.card1:hover {
+cursor: pointer;
+scale: 1.1;
+background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+fill: white;
+}
+
+.card2:hover {
+cursor: pointer;
+scale: 1.1;
+background-color: #1877f2;
+}
+
+.card2:hover .facebook {
+fill: white;
+}
+
+.card3:hover {
+cursor: pointer;
+scale: 1.1;
+background-color: #00ff00;
+}
+
+.card3:hover .whatsapp {
+fill: white;
+}
+
+.card4:hover {
+cursor: pointer;
+scale: 1.1;
+background-color: #FF0004;
+}
+
+.card4:hover .gmail {
+fill: white;
+}
+
+
+@media (max-width: 600px) {
+.footer h2{
+    position: relative;
+    top: 5%;
+    margin-left: 5%;
+}
+
+.dropdown2 {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.sidebar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
+    gap: 0px; /* Space between columns */
+    padding: 10px; /* Add padding to the sidebar */
+  }
+
+  .account-section, .company-section {
+    display: flex;
+    flex-direction: column; /* Stack links vertically within each section */
+  }
+
+  .account-section h2, .company-section h2 {
+    font-size: 18px; /* Adjust heading size for mobile */
+    margin-bottom: 10px; /* Space below headings */
+  }
+
+  .account-section ul, .company-section ul {
+    font-family: Nunito;
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 5%; /* Remove margin */
+  }
+
+  .account-section li, .company-section li {
+    margin-bottom: 10px; /* Space between links */
+  }
+
+  .account-section a, .company-section a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Link color */
+    font-size: 16px; /* Font size for links */
+  }
+
+  .account-section a:hover, .company-section a:hover {
+    color: #007BFF; /* Link color on hover */
+  }
+
+.footer h3 {
+    position: relative;
+    margin-left: 25%;
+}
+
+.main{
+    position: relative;
+    margin-left: 15%;
+}
+}
+
+@media (min-width: 601px) {
+
+.footer h2{
+    margin-top: 3%;
+}
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+    gap: 20px; /* Gap between sections */
+    padding: 20px; /* Padding around the footer */
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between account and company sections */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+
+  .account-section, .company-section {
+    font-family: Nunito;
+    display: flex;
+    flex-direction: column; /* Stack links vertically within each section */
+  }
+
+  .account-section ul, .company-section ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+  }
+
+  .account-section li, .company-section li {
+    margin-bottom: 10px; /* Space between links */
+  }
+
+  .account-section a, .company-section a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Link color */
+    font-size: 16px; /* Font size for links */
+  }
+
+  .account-section a:hover, .company-section a:hover {
+    color: #007BFF; /* Link color on hover */
+  }
+
+  .main {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 10px; /* Space between social media buttons */
+    margin-left: -3%;
+}
+
+} 
+
+@media (min-width: 992px) {
+
+.footer h2{
+    margin-top: 3%;
+}
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+    gap: 20px; /* Gap between sections */
+    padding: 20px; /* Padding around the footer */
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between account and company sections */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+
+  .account-section, .company-section {
+    font-family: Nunito;
+    display: flex;
+    flex-direction: column; /* Stack links vertically within each section */
+  }
+
+  .account-section ul, .company-section ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+  }
+
+  .account-section li, .company-section li {
+    margin-bottom: 10px; /* Space between links */
+  }
+
+  .account-section a, .company-section a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Link color */
+    font-size: 16px; /* Font size for links */
+  }
+
+  .account-section a:hover, .company-section a:hover {
+    color: #007BFF; /* Link color on hover */
+  }
+
+  .main {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 10px; /* Space between social media buttons */
+    margin-left: -2%;
+}
+
+} 
+
+/* Loader styling */
+  
+.loader-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #242f34;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it is above other content */
+
+}
+@keyframes square-animation {
+ 0% {
+  left: 0;
+  top: 0;
+ }
+
+ 10.5% {
+  left: 0;
+  top: 0;
+ }
+
+ 12.5% {
+  left: 32px;
+  top: 0;
+ }
+
+ 23% {
+  left: 32px;
+  top: 0;
+ }
+
+ 25% {
+  left: 64px;
+  top: 0;
+ }
+
+ 35.5% {
+  left: 64px;
+  top: 0;
+ }
+
+ 37.5% {
+  left: 64px;
+  top: 32px;
+ }
+
+ 48% {
+  left: 64px;
+  top: 32px;
+ }
+
+ 50% {
+  left: 32px;
+  top: 32px;
+ }
+
+ 60.5% {
+  left: 32px;
+  top: 32px;
+ }
+
+ 62.5% {
+  left: 32px;
+  top: 64px;
+ }
+
+ 73% {
+  left: 32px;
+  top: 64px;
+ }
+
+ 75% {
+  left: 0;
+  top: 64px;
+ }
+
+ 85.5% {
+  left: 0;
+  top: 64px;
+ }
+
+ 87.5% {
+  left: 0;
+  top: 32px;
+ }
+
+ 98% {
+  left: 0;
+  top: 32px;
+ }
+
+ 100% {
+  left: 0;
+  top: 0;
+ }
+}
+
+.loader {
+ position: relative;
+ width: 96px;
+ height: 96px;
+ transform: rotate(45deg);
+}
+
+.loader-square {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 28px;
+ height: 28px;
+ margin: 2px;
+ border-radius: 0px;
+ background: white;
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+ animation: square-animation 10s ease-in-out infinite both;
+}
+
+.loader-square:nth-of-type(0) {
+ animation-delay: 0s;
+}
+
+.loader-square:nth-of-type(1) {
+ animation-delay: -1.4285714286s;
+}
+
+.loader-square:nth-of-type(2) {
+ animation-delay: -2.8571428571s;
+}
+
+.loader-square:nth-of-type(3) {
+ animation-delay: -4.2857142857s;
+}
+
+.loader-square:nth-of-type(4) {
+ animation-delay: -5.7142857143s;
+}
+
+.loader-square:nth-of-type(5) {
+ animation-delay: -7.1428571429s;
+}
+
+.loader-square:nth-of-type(6) {
+ animation-delay: -8.5714285714s;
+}
+
+.loader-square:nth-of-type(7) {
+ animation-delay: -10s;
+}

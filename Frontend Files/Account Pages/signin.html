@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signin.css">
+<style>
+    body {
+        background-color: #00a0bd;
+    }
+</style>
+</head>
+
+<body>
+
+<h1 class="website-name"style="color: whitesmoke;font-weight: bold; font-family: Nunito;">
+    <a href="../Homepage/homepage.html" style="color: inherit; text-decoration: None;">Flighter</a>
+</h1>
+
+<!-- The Actual Form -->
+<div class="form-box">
+    <form class="form">
+        <span class="title">Sign In</span>
+        <span class="subtitle">Log into your account by email.</span>
+        <div class="form-container">
+            <input type="email" class="input" placeholder="Email" id="f1">
+            <input type="text" class="input" placeholder="Password" id="f2">
+            <span class="error-message" id="error-message">Incorrect email or password</span>
+        </div>
+        <button id="sign-in-button" style="font-family: Nunito;">Sign In</button>
+    </form>
+    <div class="form-section">
+        <p>By signing in, you agree with our <a href="">Terms & conditions</a> and <a href="">Privacy agreement</a></p>
+        <p>Don't have an account? <a href="register.html">Sign Up</a> </p>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/crypto-js@4.1.1/crypto-js.js"></script>
+
+<script src="signin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="verification.css">
+<style>
+    body {
+        background-color: #00a0bd;
+    }
+</style>
+</head>
+
+<body>
+
+<h1 class='website-name'style="color: whitesmoke;font-weight: bold; font-family: Nunito;">
+    <a href="../Homepage/homepage.html" style="color: inherit; text-decoration: None;">Flighter</a>
+</h1>
+
+<!-- The Actual Form -->
+<form class="otp-Form">
+ 
+    <span class="mainHeading">Enter verification code</span>
+    <p class="otpSubheading">We have sent a verification code to your email</p>
+    <div class="inputContainer">
+        <input required="required" maxlength="1" type="text" class="otp-input" id="input1" autocomplete="off">
+        <input required="required" maxlength="1" type="text" class="otp-input" id="input2" autocomplete="off">
+        <input required="required" maxlength="1" type="text" class="otp-input" id="input3" autocomplete="off">
+        <input required="required" maxlength="1" type="text" class="otp-input" id="input4" autocomplete="off"> 
+        <input required="required" maxlength="1" type="text" class="otp-input" id="input5" autocomplete="off"> 
+        <input required="required" maxlength="1" type="text" class="otp-input" id="input6" autocomplete="off"> 
+    </div>
+
+     <button class="verifyButton" type="submit" id="verifyButton">Verify</button>
+     <div class="timer" id="timer">03:00</div>
+       <!-- <button class="exitBtn">×</button> -->
+       <p class="resendNote">Didn't receive the code? <button class="resendBtn" id="resendBtn">Resend Code</button></p>
+       
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/crypto-js@4.1.1/crypto-js.js"></script>
+
+<script src="verification.js"></script>
+
+</body>
+
+</html>
