@@ -74,8 +74,8 @@ def email_verification(first_name, receiver_email) -> str:
     # Create a verification code
     verification_code = generate_verification_code()
 
-    sender_email = "noreplyflighter@gmail.com"
-    sender_password = "kuin ayfb eoiu nbca" # App key
+    sender_email = "SENDER_EMAIL_HERE"
+    sender_password = "EMAIL_PASSWORD_HERE" # App key
 
     subject = f"Flighter Account Verification Code"
     body = f"Dear {first_name}, Your Flighter verification code is {verification_code}. This code will only be valid for 3 minutes"
