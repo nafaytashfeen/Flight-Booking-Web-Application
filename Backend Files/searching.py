@@ -8,6 +8,7 @@ from signupIn import create_user, credentials_lookup, email_verification
 from recent_searches import id_lookup, add_recent_search
 import psycopg2
 from psycopg2 import sql
+import hashlib
 
 
 app = Flask(__name__)

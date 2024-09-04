@@ -5,6 +5,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import random
+import hashlib
 
 
 def create_user(connection, user_data) -> bool:
@@ -14,6 +15,11 @@ def create_user(connection, user_data) -> bool:
     """
     try:
         with connection.cursor() as cursor:
+            user_pass  = user_data['password']
+            hash_object = hashlib.sha256()
+            hash_object.update(user_pass.encode('utf-8'))
+            hashed_password = hash_object.hexdigest()
+
             create_user_query = sql.SQL("""
             INSERT INTO USERS (first_name, last_name, email, password)
             VALUES (%s, %s, %s, %s);
@@ -22,7 +28,7 @@ def create_user(connection, user_data) -> bool:
                 user_data['first_name'],
                 user_data['last_name'],
                 user_data['email'],
-                user_data['password']
+                hashed_password
             ))
             connection.commit()
 
@@ -38,11 +44,16 @@ def credentials_lookup(connection, user_data) -> bool:
     """
     try:
         with connection.cursor() as cursor:
+            user_pass  = user_data['password']
+            hash_object = hashlib.sha256()
+            hash_object.update(user_pass.encode('utf-8'))
+            hashed_password = hash_object.hexdigest()
+
             credentials_lookup_query = sql.SQL("""
             SELECT * FROM USERS
             WHERE email = %s AND password = %s;
             """)
-            cursor.execute(credentials_lookup_query, (user_data['email'], user_data['password']))
+            cursor.execute(credentials_lookup_query, (user_data['email'], hashed_password))
             result = cursor.fetchone()
 
             if result:
