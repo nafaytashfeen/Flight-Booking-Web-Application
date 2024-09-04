@@ -38,11 +38,11 @@ async function signIn(event) {
 
     } else {
         // Begin by doing email lookup in the Database
-        const encryptedPassword = CryptoJS.SHA256(password).toString();
+        // const encryptedPassword = CryptoJS.SHA256(password).toString();
 
         const user = {
             'email': email,
-            'password': encryptedPassword
+            'password': password
         }
         // Now that the user data is stored in JSON format, send it to backend 
         // for credential lookup

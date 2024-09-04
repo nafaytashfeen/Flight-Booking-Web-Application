@@ -87,12 +87,13 @@ async function signUp(event) {
     } else {
         // The case where the passwords match and the fields are all filled out
         errorMessage.style.display = 'none';
-        const encryptedPassword = CryptoJS.SHA256(password).toString();
+        // const encryptedPassword = CryptoJS.SHA256(password).toString();
+        // Going to hash password in backend instead
         const user = {
             'first_name': first_name,
             'last_name': last_name,
             'email': email,
-            'password': encryptedPassword,
+            'password': password,
         };
         // Now that the user data is stored in JSON format, send user to verification page,
         // but first, store the user_data in sessionStorage
